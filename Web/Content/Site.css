@@ -1,0 +1,649 @@
+﻿@font-face {
+    font-family: "HelveticaNeue-CondensedBold";
+    src: url("Fonts/HelveticaNeue-CondensedBold.eot"); /* IE */
+    src: url("Fonts/HelveticaNeue-CondensedBold.ttf");
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "HelveticaNeue-CondensedBold", sans-serif;
+    font-size: 11px;
+    color: #414042;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+hr {
+    border-bottom: 1px solid #E1E1E1;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+.limpa {
+    clear: both;
+}
+
+.entrelinhamento {
+    line-height: 15pt;
+}
+
+.margin {
+    margin-bottom: 15px;
+}
+
+.txtBranco {
+    color: #FFFFFF;
+}
+
+.txtPreto {
+    color: #414042;
+}
+
+.txtLaranja {
+    color: #FBA63A;
+}
+
+.lnkLaranja a {
+    color: #FBA63A;
+}
+
+    .lnkLaranja a:hover {
+        color: #414042;
+    }
+
+.lnkPreto a {
+    color: #414042;
+}
+
+    .lnkPreto a:hover {
+        color: #FBA63A;
+    }
+
+.lnkBranco a {
+    color: #FFFFFF;
+}
+
+    .lnkBranco a:hover {
+        color: #FE9103;
+    }
+
+.txt {
+    width: 306px;
+    height: 36px;
+    border: 1px solid #E3E3E3;
+    color: #BBBBBB;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.ddl {
+    width: 319px;
+    height: 34px;
+    border: 1px solid #E3E3E3;
+    color: #BBBBBB;
+    margin-bottom: 10px;
+    padding-left: 6px;
+}
+
+.btn {
+    width: 111px;
+    height: 42px;
+    background-color: #414042;
+    border: 1px solid #EFEFEF;
+    color: #EFEFEF;
+    text-align: center;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #333333;
+    }
+
+.geral {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.conteudo {
+    width: 960px;
+    margin: auto;
+    padding-bottom: 332px;
+    display: table;
+}
+
+/* Menu */
+.menuGeral {
+    width: 100%;
+    height: 76px;
+    background-color: #EFEFEF;
+    border-top: 3px solid #414042;
+    position: fixed;
+    display: table;
+    z-index: 1;
+}
+
+.menu {
+    width: 972px;
+    height: auto;
+    margin: auto;
+}
+
+.logo {
+    margin-top: 11px;
+    margin-right: 35px;
+    display: block;
+    float: left;
+}
+
+.menuBtn {
+    width: 76px;
+    padding: 34px 15px 33px 14px;
+    font-family: "HelveticaNeue-CondensedBold", sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+}
+
+    .menuBtn a {
+        color: #414042;
+    }
+
+        .menuBtn a:hover {
+            color: #FBA63A;
+        }
+
+.menuSuspenso {
+    top: 74px;
+    margin-left: -18px;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 22pt;
+    text-align: left;
+    background: rgba(239, 239, 239, 0.9);
+    position: absolute;
+    display: none;
+    z-index: 9999;
+}
+
+.menuBtnSuspenso {
+    width: 93px;
+    color: #414042;
+    position: relative;
+}
+
+.menuDiv {
+    height: 77px;
+    margin: 7px 0px 7px 0px;
+    border-right: 1px dotted #BBBBBB;
+    float: left;
+}
+
+/* Aba */
+.aba {
+    width: 157px;
+    height: 15px;
+    background-image: url('../Images/aba.jpg');
+    float: left;
+}
+
+.abaTxt {
+    font-family: Calibri;
+    font-size: 10px;
+    padding: 0px 3px 0px 31px;
+    float: left;
+}
+
+    .abaTxt a {
+        color: #EFEFEF;
+    }
+
+        .abaTxt a:hover {
+            color: #CECECE;
+        }
+
+/* Espaçamento do menu no Site.Master */
+.menuFix {
+    padding-top: 104px;
+}
+
+/* Rodapé */
+.rodapeGeral {
+    bottom: 0;
+    width: 100%;
+    height: 327px;
+    background-image: url('../Images/fnd-rodape.jpg');
+    display: table;
+    position: absolute;
+}
+
+.rodape {
+    width: 960px;
+    height: 327px;
+    margin: auto;
+}
+
+.rodapeTxt {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+    .rodapeTxt a {
+        color: #FBA63A;
+    }
+
+        .rodapeTxt a:hover {
+            color: #FFFFFF;
+        }
+
+.friendlyUrls {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+    .friendlyUrls a {
+        color: #FFFFFF;
+    }
+
+        .friendlyUrls a:hover {
+            color: #FBA63A;
+        }
+
+/* Ícones nos TextBoxs */
+.iconUser {
+    background-image: url("../Images/icon-user.png");
+    background-repeat: no-repeat;
+    padding-left: 36px;
+}
+
+.iconMail {
+    background-image: url("../Images/icon-mail.png");
+    background-repeat: no-repeat;
+    padding-left: 36px;
+}
+
+/* Home */
+.bannerGeral {
+    width: 100%;
+    height: 322px;
+    background: url('../Images/fnd.png') repeat;
+    display: table;
+}
+
+.banner {
+    width: 842px;
+    margin: auto;
+}
+
+.portfolioGeral {
+    width: 100%;
+    height: 327px;
+    background-color: #414042;
+}
+
+.portfolio {
+    width: 960px;
+    height: 265px;
+    background-image: url('../Images/fnd-portfolio.jpg');
+    margin: auto;
+}
+
+.portfolioMonitor {
+    width: 410px;
+    height: 265px;
+    float: left;
+}
+
+.portfolioSite {
+    width: 192px;
+    height: 144px;
+    margin: 56px 0px 0px 141px;
+    float: left;
+}
+
+.portfolioNavEsq {
+    width: 46px;
+    margin: 35px 0px 0px 141px;
+    color: #FFFFFF;
+    float: left;
+}
+
+.portfolioNavDir {
+    width: 46px;
+    margin: 35px 0px 0px 103px;
+    color: #FFFFFF;
+    float: left;
+}
+
+.portfolioInformacoes {
+    width: 550px;
+    height: 225px;
+    padding-top: 39px;
+    color: #FFFFFF;
+    float: left;
+}
+
+    .portfolioInformacoes a {
+        color: #FFFFFF;
+    }
+
+        .portfolioInformacoes a:hover {
+            color: #FE9103;
+        }
+
+.solucoesGeral {
+    width: 100%;
+    height: 239px;
+    background-color: #FFFFFF;
+}
+
+.solucoes {
+    width: 960px;
+    height: 229px;
+    background-image: url('../Images/fnd-solucoes.jpg');
+    margin: auto;
+}
+
+.solucoesEsq {
+    width: 349px;
+    height: 192px;
+    margin: 35px 8px 0px 141px;
+    padding-left: 8px;
+    float: left;
+}
+
+.solucoesDir {
+    width: 349px;
+    height: 192px;
+    margin: 35px 0px 0px 8px;
+    padding-left: 8px;
+    float: left;
+}
+
+.solucoesTxt {
+    width: 194px;
+    height: auto;
+    padding-right: 5px;
+    text-align: left;
+    float: left;
+}
+
+.newsletter {
+    width: 510px;
+    height: 201px;
+    display: table;
+    float: left;
+}
+
+    .newsletter h2 {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+.tweets {
+    width: 215px;
+    height: 201px;
+    margin-left: 10px;
+    display: table;
+    float: left;
+}
+
+    .tweets h2 {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+.redesSociais {
+    width: 215px;
+    height: 201px;
+    display: table;
+    float: left;
+}
+
+    .redesSociais h2 {
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .redesSociais a {
+        margin-right: 2px;
+    }
+
+/* Empresa */
+.empColEsq {
+    width: 307px;
+    height: 375px;
+    text-align: left;
+    padding-right: 10px;
+    display: table;
+    float: left;
+}
+
+.empColCentro {
+    width: 306px;
+    height: 375px;
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 10px;
+    display: table;
+    float: left;
+}
+
+.empColDir {
+    width: 306px;
+    height: 375px;
+    text-align: left;
+    padding-left: 15px;
+    display: table;
+    float: left;
+}
+
+/* Soluções */
+.solCol {
+    width: 960px;
+    height: auto;
+    margin: 0;
+}
+
+    .solCol h2 {
+        margin-top: 0px;
+        background-color: #E1E1E1;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+    }
+
+.solColIntA {
+    width: 306px;
+    height: 152px;
+    margin-right: 18px;
+    border: 1px dashed #E1E1E1;
+    display: table;
+    float: left;
+}
+
+    .solColIntA p {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+.solColIntB {
+    width: 306px;
+    height: 152px;
+    margin-right: 18px;
+    border: 1px dashed #E1E1E1;
+    display: table;
+    float: left;
+}
+
+    .solColIntB p {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+.solColIntC {
+    width: 306px;
+    height: 152px;
+    border: 1px dashed #E1E1E1;
+    display: table;
+    float: left;
+}
+
+    .solColIntC p {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+/* Clientes */
+.cliCol {
+    width: 960px;
+    height: auto;
+    margin: 0;
+}
+
+    .cliCol h2 {
+        margin-top: 0px;
+        background-color: #E1E1E1;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+    }
+
+.cliColInt {
+    width: 306px;
+    margin: 15px 18px 0px 0px;
+    border: 1px dashed #E1E1E1;
+    display: table;
+}
+
+    .cliColInt img {
+        text-align: center;
+    }
+
+/* Portfólio */
+.portCol {
+    width: 960px;
+    height: auto;
+    margin: 0;
+}
+
+    .portCol h2 {
+        margin-top: 0px;
+        background-color: #E1E1E1;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+    }
+
+    .portCol img {
+        border: 1px dashed;
+        color: #E1E1E1;
+    }
+
+.portColEsq {
+    width: 194px;
+    height: 144px;
+    display: table;
+    float: left;
+}
+
+.portColDir {
+    width: 754px;
+    height: 144px;
+    margin-left: 10px;
+    display: table;
+    float: left;
+}
+
+.portTitulo {
+    font-size: 13px;
+}
+
+.lnkPortfolio {
+    font-size: 21px;
+    font-weight: bold;
+    color: #FBA63A;
+}
+
+    .lnkPortfolio a {
+        padding: 12px;
+        font-size: 12px;
+        color: #414042;
+    }
+
+        .lnkPortfolio a:hover {
+            color: #FBA63A;
+        }
+
+/* Contato  */
+.conColEsq {
+    width: 645px;
+    height: auto;
+    text-align: left;
+    display: table;
+    float: left;
+}
+
+.conColDir {
+    width: 235px;
+    height: auto;
+    margin-left: 80px;
+    display: table;
+    float: left;
+}
+
+.mensagem {
+    margin: 120px 0px 120px 0px;
+    text-align: center;
+}
+
+/* Sitemap  */
+.sitemap {
+    width: auto;
+    height: 285px;
+}
+
+/* Erro  */
+.erroGeral {
+    width: 100%;
+    height: auto;
+}
+
+.erro {
+    width: 422px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.erroCol {
+    width: 193px;
+    height: auto;
+    margin: 9px;
+    text-align: left;
+    display: table;
+    float: left;
+}

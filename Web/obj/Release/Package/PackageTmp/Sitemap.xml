@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://www.poob.com.br/</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Home</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Empresa</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Solucoes/</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Solucoes/Criacao-de-Sites</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Solucoes/E-mail-Marketing</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Solucoes/Otimizacao-de-Sites-SEO</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Clientes</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Portfolio</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Contato</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Contato?Assunto=Otimizacao-de-Sites-SEO</loc>
+  </url>
+  <url>
+    <loc>http://www.poob.com.br/Sitemap</loc>
+  </url>
+</urlset>

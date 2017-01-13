@@ -1,0 +1,166 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="Web.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head runat="server">
+    <!-- Início das meta tags -->
+    <meta name="title" content="Poob Info – Soluções em Tecnologias" />
+    <meta name="description" content="Poob Info é uma empresa de tecnologia, voltada para a criação de sites, hotsites, portais, e-commerces e intranet, otimização de sites / SEO, desenvolvimento de softwares, criação de logos, banners e peças para disparo de e-mail marketing, entre outros serviços, com sede em São Paulo, Brasil." />
+    <meta name="abstract" content="Poob Info é uma empresa de tecnologia, voltada para a criação de sites, hotsites, portais, e-commerces e intranet, otimização de sites / SEO, desenvolvimento de softwares, criação de logos, banners e peças para disparo de e-mail marketing, entre outros serviços, com sede em São Paulo, Brasil." />
+    <meta name="keywords" content="Criação, desenvolvimento, websites,	sites, hotsites, portais, e-commerces, intranet, manutenção de sites, otimização de sites / SEO, desenvolvimento de softwares, criação de logos, criação de banners, criação de peças de e-mail marketing, empresa de tecnologia, São Paulo" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Poob Info; Allex Rocha" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Fim das meta tags -->
+    <title></title>
+    <!-- Favicon -->
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- Carrega os CSS's -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Slideshow.css" rel="stylesheet" />
+    <!--[if lt IE 10]>
+    <link href="~/Content/IE.css" rel="stylesheet" />
+    <![endif]-->
+    <!-- Carrega os JavaScript's -->
+    <script src="<%= Page.ResolveClientUrl("~/Scripts/jQuery.js") %>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/Scripts/Menu.js") %>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/Scripts/Slideshow.js") %>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/Scripts/ImageOver.js") %>"></script>
+    <script src="<%= Page.ResolveClientUrl("~/Scripts/Placeholder.js") %>"></script>
+    <!--[if lt IE 10]>
+    <script src="<%= Page.ResolveClientUrl("~/Scripts/IE.js") %>"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Início do código do Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43031323-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Fim do código do Google Analytics -->
+</head>
+<body>
+    <form id="form1" runat="server" style="height: 100%;">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="geral">
+            <!-- Início do menu -->
+            <div class="menuGeral">
+                <nav class="menu">
+                    <div class="logo">
+                        <asp:HyperLink ID="lnkLogo" NavigateUrl="~/Home" ImageUrl="~/Images/logo-poob-info.png" ToolTip="Poob Info" runat="server" />
+                    </div>
+                    <div id="Home" class="menuBtn">
+                        <asp:HyperLink ID="lnkHome" NavigateUrl="~/Home" runat="server">Home</asp:HyperLink>
+                    </div>
+                    <div class="menuDiv"></div>
+                    <div id="Empresa" class="menuBtn">
+                        <asp:HyperLink ID="lnkEmpresa" NavigateUrl="~/Empresa" runat="server">Empresa</asp:HyperLink>
+                    </div>
+                    <div class="menuDiv"></div>
+                    <div id="Solucoes" class="menuBtn">
+                        <asp:HyperLink ID="lnkSolucoes" NavigateUrl="~/Solucoes/" runat="server">Soluções</asp:HyperLink>
+                        <div class="menuSuspenso">
+                            <div class="menuBtnSuspenso">
+                                <asp:HyperLink ID="lnkCriacaoDeSites" NavigateUrl="~/Solucoes/Criacao-de-Sites" runat="server">Criação de Sites</asp:HyperLink>
+                            </div>
+                            <hr />
+                            <div class="menuBtnSuspenso">
+                                <asp:HyperLink ID="lnkEmailMarketing" NavigateUrl="~/Solucoes/E-mail-Marketing" runat="server">E-mail Marketing</asp:HyperLink>
+                            </div>
+                            <hr />
+                            <div class="menuBtnSuspenso">
+                                <asp:HyperLink ID="lnkOtimizacaoDeSitesSEO" NavigateUrl="~/Solucoes/Otimizacao-de-Sites-SEO" runat="server">Otimização - SEO</asp:HyperLink>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuDiv"></div>
+                    <div id="Clientes" class="menuBtn">
+                        <asp:HyperLink ID="lnkClientes" NavigateUrl="~/Clientes" runat="server">Clientes</asp:HyperLink>
+                    </div>
+                    <div class="menuDiv"></div>
+                    <div id="Portfolio" class="menuBtn">
+                        <asp:HyperLink ID="lnkPortfolio" NavigateUrl="~/Portfolio" runat="server">Portfólio</asp:HyperLink>
+                    </div>
+                    <div class="menuDiv"></div>
+                    <div id="Contato" class="menuBtn">
+                        <asp:HyperLink ID="lnkContato" NavigateUrl="~/Contato" runat="server">Contato</asp:HyperLink>
+                    </div>
+                    <div class="aba">
+                        <div class="abaTxt">
+                            <asp:HyperLink ID="lnkWebmail1" NavigateUrl="http://mail.poob.com.br" Target="_blank" ToolTip="Acesse o Webmail da Poob Info" runat="server">WEBMAIL</asp:HyperLink>
+                        </div>
+                        <div class="abaTxt">
+                            <asp:HyperLink ID="lnkSitemap1" NavigateUrl="~/Sitemap" ToolTip="Veja o Sitemap da Poob Info" runat="server">SITEMAP</asp:HyperLink>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Fim do menu -->
+            <div class="limpa"></div>
+            <div class="menuFix">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- Início do rodapé -->
+            <div class="rodapeGeral">
+                <div class="rodape">
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <div class="newsletter">
+                                <h2 class="txtPreto">Newsletter</h2>
+                                <asp:TextBox ID="txtNome" placeholder="Seu nome" MaxLength="50" CssClass="txt iconUser" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="reqNome" ErrorMessage="Preencha o seu nome." ControlToValidate="txtNome" CssClass="txtPreto" ValidationGroup="Newsletter" SetFocusOnError="true" runat="server"></asp:RequiredFieldValidator>
+                                <br />
+                                <asp:TextBox ID="txtEmail" placeholder="email@exemplo.com.br" MaxLength="100" CssClass="txt iconMail" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="reqEmail" ErrorMessage="Preencha o seu e-mail." ControlToValidate="txtEmail" CssClass="txtPreto" ValidationGroup="Newsletter" SetFocusOnError="true" Display="Dynamic" runat="server"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="regularExpression" ErrorMessage="Preencha um e-mail válido." ControlToValidate="txtEmail" CssClass="txtPreto" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="Newsletter" SetFocusOnError="true" Display="Dynamic" runat="server"></asp:RegularExpressionValidator>
+                                <br />
+                                <asp:Button ID="btnCadastrar" Text="Cadastrar" ToolTip="Cadastre-se para receber nossas newsletters" 
+                                    CssClass="btn" ValidationGroup="Newsletter" runat="server" OnClick="btnCadastrar_Click" />
+                                <asp:Label ID="lblMensagem" CssClass="entrelinhamento" Visible="false" runat="server"></asp:Label>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <div class="tweets txtPreto lnkLaranja">
+                        <h2>Tweets</h2>
+                        <asp:Image ID="imgBird" ImageUrl="~/Images/bird.png" ImageAlign="AbsMiddle" AlternateText="Twitter Bird" runat="server" />
+                        Siga-nos <asp:HyperLink ID="lnkTweets" NavigateUrl="https://twitter.com/PoobInfo" Target="_blank" 
+                                    ToolTip="Siga-nos @PoobInfo" runat="server">@PoobInfo</asp:HyperLink>
+                    </div>
+                    <div class="redesSociais">
+                        <h2 class="txtPreto">Redes sociais</h2>
+                        <asp:HyperLink ID="lnkFacebook" NavigateUrl="http://www.facebook.com/PoobInfo" Target="_blank" 
+                            ImageUrl="~/Images/facebook.jpg" ToolTip="Curta a nossa página no Facebook" runat="server" />
+                        <asp:HyperLink ID="lnkTwitter" NavigateUrl="https://twitter.com/PoobInfo" Target="_blank" 
+                            ImageUrl="~/Images/twitter.jpg" ToolTip="Siga-nos no Twitter" runat="server" />
+                        <asp:HyperLink ID="lnkGooglePlus" NavigateUrl="#" 
+                            ImageUrl="~/Images/google-plus.jpg" ToolTip="Compartilhe no Google+" runat="server" />
+                    </div>
+                    <div class="limpa"></div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <p class="rodapeTxt">
+                        © Copyright 2008-<%: DateTime.Now.Year %> – <asp:HyperLink ID="lnkPoobInfo" NavigateUrl="~/Empresa" ToolTip="Poob Info" runat="server">Poob Info</asp:HyperLink> – Todos os direitos reservados.
+                    </p>
+                    <span class="friendlyUrls">
+                        <friendlyUrls:ViewSwitcher runat="server" />
+                    </span>
+                </div>
+            </div>
+            <!-- Fim do rodapé -->
+        </div>
+    </form>
+</body>
+</html>
