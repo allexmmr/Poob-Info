@@ -29,6 +29,7 @@
       src="https://code.jquery.com/jquery-2.0.3.min.js"
       integrity="sha256-sTy1mJ4I/LAjFCCdEB4RAvPSmRCb3CU7YqodohyeOLo="
       crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="<%= Page.ResolveClientUrl("~/Scripts/Menu.js") %>"></script>
     <script src="<%= Page.ResolveClientUrl("~/Scripts/Slideshow.js") %>"></script>
     <script src="<%= Page.ResolveClientUrl("~/Scripts/ImageOver.js") %>"></script>
@@ -128,6 +129,8 @@
                                 <asp:RequiredFieldValidator ID="reqEmail" ErrorMessage="Preencha o seu e-mail." ControlToValidate="txtEmail" CssClass="txtPreto" ValidationGroup="Newsletter" SetFocusOnError="true" Display="Dynamic" runat="server"></asp:RequiredFieldValidator>
                                 <asp:RegularExpressionValidator ID="regularExpression" ErrorMessage="Preencha um e-mail válido." ControlToValidate="txtEmail" CssClass="txtPreto" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="Newsletter" SetFocusOnError="true" Display="Dynamic" runat="server"></asp:RegularExpressionValidator>
                                 <br />
+                                <div class="g-recaptcha" data-sitekey="6LdRWdcUAAAAAMau428OU6tjcAvjRJlfLvMfaTrG"></div>
+                                <br/>
                                 <asp:Button ID="btnCadastrar" Text="Cadastrar" ToolTip="Cadastre-se para receber nossas newsletters" 
                                     CssClass="btn" ValidationGroup="Newsletter" runat="server" OnClick="btnCadastrar_Click" />
                                 <asp:Label ID="lblMensagem" CssClass="entrelinhamento" Visible="false" runat="server"></asp:Label>
@@ -146,8 +149,6 @@
                             ImageUrl="~/Images/facebook.jpg" ToolTip="Curta a nossa página no Facebook" runat="server" />
                         <asp:HyperLink ID="lnkTwitter" NavigateUrl="https://twitter.com/PoobInfo" Target="_blank" 
                             ImageUrl="~/Images/twitter.jpg" ToolTip="Siga-nos no Twitter" runat="server" />
-                        <asp:HyperLink ID="lnkGooglePlus" NavigateUrl="#" 
-                            ImageUrl="~/Images/google-plus.jpg" ToolTip="Compartilhe no Google+" runat="server" />
                     </div>
                     <div class="limpa"></div>
                     <br />
