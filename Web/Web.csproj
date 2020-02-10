@@ -98,8 +98,6 @@
     <Content Include="Images\fnd-rodape.jpg" />
     <Content Include="Images\fnd-solucoes.jpg" />
     <Content Include="Images\fnd.png" />
-    <Content Include="Images\google-plus-over.jpg" />
-    <Content Include="Images\google-plus.jpg" />
     <Content Include="Images\icon-mail.png" />
     <Content Include="Images\icon-user.png" />
     <Content Include="Images\icon.png" />

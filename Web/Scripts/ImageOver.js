@@ -20,13 +20,6 @@
         $(this).attr("src", "../Images/twitter.jpg");
     });
 
-    // Troca o ícone do Google Plus
-    $("#lnkGooglePlus img").hover(function () {
-        $(this).attr("src", "../Images/google-plus-over.jpg");
-    }, function () {
-        $(this).attr("src", "../Images/google-plus.jpg");
-    });
-
     // Troca a imagem da logo na página de erro
     $("#ContentPlaceHolder1_lnkPoobInfo img").hover(function () {
         $(this).attr("src", "../Images/logo-poob-info-over.png");
