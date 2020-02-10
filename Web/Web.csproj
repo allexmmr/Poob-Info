@@ -23,6 +23,8 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -133,7 +135,6 @@
     <Content Include="robots.txt" />
     <Content Include="Scripts\IE.js" />
     <Content Include="Scripts\ImageOver.js" />
-    <Content Include="Scripts\jQuery.js" />
     <Content Include="Scripts\Menu.js" />
     <Content Include="Scripts\Placeholder.js" />
     <Content Include="Scripts\Slideshow.js" />

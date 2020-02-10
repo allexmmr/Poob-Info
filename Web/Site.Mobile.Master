@@ -25,7 +25,10 @@
     <link href="~/Content/IE.css" rel="stylesheet" />
     <![endif]-->
     <!-- Carrega os JavaScript's -->
-    <script src="<%= Page.ResolveClientUrl("~/Scripts/jQuery.js") %>"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.0.3.min.js"
+      integrity="sha256-sTy1mJ4I/LAjFCCdEB4RAvPSmRCb3CU7YqodohyeOLo="
+      crossorigin="anonymous"></script>
     <script src="<%= Page.ResolveClientUrl("~/Scripts/Menu.js") %>"></script>
     <script src="<%= Page.ResolveClientUrl("~/Scripts/Slideshow.js") %>"></script>
     <script src="<%= Page.ResolveClientUrl("~/Scripts/ImageOver.js") %>"></script>
