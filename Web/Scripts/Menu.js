@@ -25,7 +25,7 @@
     // Deixa o link ativo em laranja
     var url = window.location.pathname.substring(1);
 
-    if (url == "" || url.indexOf("Home") >= 0) {
+    if (url === "" || url.indexOf("Home") >= 0) {
         url = "Home";
     } else if (url.indexOf("Solucoes") >= 0) {
         url = "Solucoes";

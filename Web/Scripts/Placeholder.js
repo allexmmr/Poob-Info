@@ -5,7 +5,7 @@
 
     }).blur(function () {
         var campo = $(this);
-        if (campo.val() == "" || campo.val() == campo.attr("placeholder")) {
+        if (campo.val() === "" || campo.val() === campo.attr("placeholder")) {
             $(campo).css("color", "#BBBBBB");
         }
     });
