@@ -15,7 +15,7 @@ namespace PoobInfo
         {
             if (Page.IsValid)
             {
-                bool isGoogleCaptchaValid = GoogleReCaptcha.Validate("6LdRWdcUAAAAALneB0JUblBTzT_tlKMXCgqWWhoP", Request.Form["g-Recaptcha-Response"]);
+                bool isGoogleCaptchaValid = GoogleReCaptcha.Validate("", Request.Form["g-Recaptcha-Response"]);
 
                 if (!isGoogleCaptchaValid)
                     return;
