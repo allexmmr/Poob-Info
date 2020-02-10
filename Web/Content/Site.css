@@ -233,7 +233,7 @@ hr {
 .rodapeGeral {
     bottom: 0;
     width: 100%;
-    height: 327px;
+    height: 382px;
     background-image: url('../Images/fnd-rodape.jpg');
     display: table;
     position: absolute;
@@ -241,7 +241,7 @@ hr {
 
 .rodape {
     width: 960px;
-    height: 327px;
+    height: 382px;
     margin: auto;
 }
 
