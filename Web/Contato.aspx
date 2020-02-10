@@ -35,6 +35,8 @@
                         <asp:TextBox ID="txtMensagem" placeholder="Mensagem" TextMode="MultiLine" CssClass="txt" Height="100px" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="reqMensagem" ErrorMessage="Por favor, preencha a mensagem." ControlToValidate="txtMensagem" ValidationGroup="Formulario" SetFocusOnError="true" runat="server"></asp:RequiredFieldValidator>
                         <br />
+                        <div class="g-recaptcha" data-sitekey="6LdRWdcUAAAAAMau428OU6tjcAvjRJlfLvMfaTrG"></div>
+                        <br/>
                         <asp:Button ID="btnEnviar" Text="Enviar" ToolTip="Enviar" CssClass="btn" ValidationGroup="Formulario" runat="server" OnClick="btnEnviar_Click" />
                         <asp:Button ID="btnLimpar" Text="Limpar" ToolTip="Limpar" CssClass="btn" runat="server" OnClick="btnLimpar_Click" />
                     </asp:Panel>
@@ -59,13 +61,14 @@
             <hr />
             <div class="margin"></div>
             <p class="lnkPreto entrelinhamento">
-                <strong>Allex Rocha</strong>
+                <strong>Suporte no Brasil</strong>
                 <br />
-                +55 11 98663-2261
+                Email: <a href="mailto: contato@poob.com.br?subject=Contato" title="Envie-nos um email">contato@poob.com.br</a>
                 <br />
-                +55 11 97543-0566
                 <br />
-                E-mail: <a href="mailto: contato@poob.com.br?subject=Contato" title="Envie-nos um e-mail">contato@poob.com.br</a>
+                <strong>Australian Support</strong>
+                <br />
+                Email: <a href="mailto: info@poob.com.au?subject=Contact" title="Send us an email">info@poob.com.au</a>
             </p>
         </div>
         <div class="limpa"></div>
