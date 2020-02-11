@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PoobInfo {
+namespace Web {
     
     
     public partial class Portfolio {

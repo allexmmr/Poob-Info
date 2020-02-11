@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Poob Info – Sitemap" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Sitemap.aspx.cs" Inherits="PoobInfo.Sitemap" %>
+﻿<%@ Page Title="Poob Info – Sitemap" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Sitemap.aspx.cs" Inherits="Web.Sitemap" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

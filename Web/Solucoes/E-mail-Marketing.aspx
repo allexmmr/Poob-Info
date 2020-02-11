@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Poob Info – Soluções: E-mail Marketing" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="E-mail-Marketing.aspx.cs" Inherits="PoobInfo.Solucoes.E_mail_Marketing" %>
+﻿<%@ Page Title="Poob Info – Soluções: E-mail Marketing" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="E-mail-Marketing.aspx.cs" Inherits="Web.Solucoes.E_mail_Marketing" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoobInfo.Solucoes
+namespace Web.Solucoes
 {
     public partial class Criacao_de_Sites : System.Web.UI.Page
     {

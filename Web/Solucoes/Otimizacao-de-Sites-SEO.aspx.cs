@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoobInfo.Solucoes
+namespace Web.Solucoes
 {
     public partial class Otimizacao_de_Sites_SEO : System.Web.UI.Page
     {

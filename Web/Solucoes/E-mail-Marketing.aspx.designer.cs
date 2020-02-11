@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PoobInfo.Solucoes {
+namespace Web.Solucoes {
     
     
     public partial class E_mail_Marketing {

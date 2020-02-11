@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoobInfo.Solucoes
+namespace Web.Solucoes
 {
     public partial class E_mail_Marketing : System.Web.UI.Page
     {

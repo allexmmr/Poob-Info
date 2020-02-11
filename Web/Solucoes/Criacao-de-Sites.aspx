@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Poob Info – Soluções: Criação de Sites" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Criacao-de-Sites.aspx.cs" Inherits="PoobInfo.Solucoes.Criacao_de_Sites" %>
+﻿<%@ Page Title="Poob Info – Soluções: Criação de Sites" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Criacao-de-Sites.aspx.cs" Inherits="Web.Solucoes.Criacao_de_Sites" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

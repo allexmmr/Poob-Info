@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Poob Info – Portfólio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Portfolio.aspx.cs" Inherits="PoobInfo.Portfolio" %>
+﻿<%@ Page Title="Poob Info – Portfólio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Portfolio.aspx.cs" Inherits="Web.Portfolio" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoobInfo
+namespace Web
 {
     public partial class Sitemap : System.Web.UI.Page
     {

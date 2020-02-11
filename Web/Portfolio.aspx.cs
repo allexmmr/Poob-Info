@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoobInfo
+namespace Web
 {
     public partial class Portfolio : System.Web.UI.Page
     {

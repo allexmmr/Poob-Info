@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PoobInfo.Solucoes {
+namespace Web.Solucoes {
     
     
     public partial class Default {

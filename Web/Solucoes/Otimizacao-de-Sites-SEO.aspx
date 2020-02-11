@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Poob Info – Soluções: Otimização de Sites / SEO" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Otimizacao-de-Sites-SEO.aspx.cs" Inherits="PoobInfo.Solucoes.Otimizacao_de_Sites_SEO" %>
+﻿<%@ Page Title="Poob Info – Soluções: Otimização de Sites / SEO" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Otimizacao-de-Sites-SEO.aspx.cs" Inherits="Web.Solucoes.Otimizacao_de_Sites_SEO" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

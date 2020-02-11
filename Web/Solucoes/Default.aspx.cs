@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PoobInfo.Solucoes
+namespace Web.Solucoes
 {
     public partial class Default : System.Web.UI.Page
     {
