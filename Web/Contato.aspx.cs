@@ -27,10 +27,13 @@ namespace Web
         {
             if (Page.IsValid)
             {
-                bool isGoogleCaptchaValid = GoogleReCaptcha.Validate("", Request.Form["g-Recaptcha-Response"]);
+                bool isGoogleCaptchaValid = GoogleReCaptcha.Validate(out string errorMessage);
 
                 if (!isGoogleCaptchaValid)
+                {
+                    lblRecaptcha.Text = errorMessage;
                     return;
+                }
 
                 #region Envia e-mail ao usuário
 

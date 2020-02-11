@@ -1,7 +1,7 @@
 ﻿using Library.Common;
 using System;
 
-namespace PoobInfo
+namespace Web
 {
     public partial class Site : System.Web.UI.MasterPage
     {
@@ -15,10 +15,13 @@ namespace PoobInfo
         {
             if (Page.IsValid)
             {
-                bool isGoogleCaptchaValid = GoogleReCaptcha.Validate("", Request.Form["g-Recaptcha-Response"]);
+                bool isGoogleCaptchaValid = GoogleReCaptcha.Validate(out string errorMessage);
 
                 if (!isGoogleCaptchaValid)
+                {
+                    lblRecaptcha.Text = errorMessage;
                     return;
+                }
 
                 #region Envia e-mail ao usuário
 

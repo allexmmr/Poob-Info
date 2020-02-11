@@ -36,7 +36,8 @@
                         <asp:RequiredFieldValidator ID="reqMensagem" ErrorMessage="Por favor, preencha a mensagem." ControlToValidate="txtMensagem" ValidationGroup="Formulario" SetFocusOnError="true" runat="server"></asp:RequiredFieldValidator>
                         <br />
                         <div class="g-recaptcha" data-sitekey="6LdRWdcUAAAAAMau428OU6tjcAvjRJlfLvMfaTrG"></div>
-                        <br/>
+                        <asp:Label id="lblRecaptcha" CssClass="entrelinhamento txtLaranja" Display="Dynamic" runat="server"></asp:Label>
+                        <br />
                         <asp:Button ID="btnEnviar" Text="Enviar" ToolTip="Enviar" CssClass="btn" ValidationGroup="Formulario" runat="server" OnClick="btnEnviar_Click" />
                         <asp:Button ID="btnLimpar" Text="Limpar" ToolTip="Limpar" CssClass="btn" runat="server" OnClick="btnLimpar_Click" />
                     </asp:Panel>

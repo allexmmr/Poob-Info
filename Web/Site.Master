@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PoobInfo.Site" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.Site" %>
 
 <%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
 
@@ -38,8 +38,8 @@
     <![endif]-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <!-- Início do código do Google Analytics -->
     <script>
+        // Início do Google Analytics
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
@@ -49,8 +49,16 @@
 
         ga('create', 'UA-43031323-1', 'auto');
         ga('send', 'pageview');
+        // Fim do Google Analytics
+
+        // Início do Google reCAPTCHA v2
+        function pageLoad(sender, args) {
+            $('.g-recaptcha').each(function (index, obj) {
+                grecaptcha.render(obj, { 'sitekey': '6LdRWdcUAAAAAMau428OU6tjcAvjRJlfLvMfaTrG' });
+            });
+        }
+        // Fim do Google reCAPTCHA v2
     </script>
-    <!-- Fim do código do Google Analytics -->
 </head>
 <body>
     <form id="form1" runat="server" style="height: 100%;">
@@ -129,7 +137,8 @@
                                 <asp:RegularExpressionValidator ID="regularExpression" ErrorMessage="Preencha um e-mail válido." ControlToValidate="txtEmail" CssClass="txtPreto" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="Newsletter" SetFocusOnError="true" Display="Dynamic" runat="server"></asp:RegularExpressionValidator>
                                 <br />
                                 <div class="g-recaptcha" data-sitekey="6LdRWdcUAAAAAMau428OU6tjcAvjRJlfLvMfaTrG"></div>
-                                <br/>
+                                <asp:Label id="lblRecaptcha" CssClass="entrelinhamento txtLaranja" Display="Dynamic" runat="server"></asp:Label>
+                                <br />
                                 <asp:Button ID="btnCadastrar" Text="Cadastrar" ToolTip="Cadastre-se para receber nossas newsletters" 
                                     CssClass="btn" ValidationGroup="Newsletter" runat="server" OnClick="btnCadastrar_Click" />
                                 <asp:Label ID="lblMensagem" CssClass="entrelinhamento" Visible="false" runat="server"></asp:Label>
