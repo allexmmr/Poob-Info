@@ -9,10 +9,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Library.dll">
-      <publishTime>02/11/2020 23:17:12</publishTime>
+      <publishTime>02/12/2020 00:02:48</publishTime>
     </File>
     <File Include="bin/Library.pdb">
-      <publishTime>02/11/2020 23:17:12</publishTime>
+      <publishTime>02/12/2020 00:02:48</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>01/06/2015 21:35:05</publishTime>
@@ -21,16 +21,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2019 00:56:44</publishTime>
     </File>
     <File Include="bin/Web.dll">
-      <publishTime>02/11/2020 23:17:13</publishTime>
+      <publishTime>02/12/2020 00:02:48</publishTime>
     </File>
     <File Include="bin/Web.pdb">
-      <publishTime>02/11/2020 23:17:13</publishTime>
+      <publishTime>02/12/2020 00:02:48</publishTime>
     </File>
     <File Include="Clientes.aspx">
       <publishTime>05/29/2016 04:20:54</publishTime>
     </File>
     <File Include="Contato.aspx">
-      <publishTime>02/11/2020 21:40:32</publishTime>
+      <publishTime>02/11/2020 23:42:04</publishTime>
     </File>
     <File Include="Content/Fonts/HelveticaNeue-CondensedBold.eot">
       <publishTime>01/06/2015 21:18:36</publishTime>
@@ -282,7 +282,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/11/2020 22:55:05</publishTime>
     </File>
     <File Include="Properties/PublishProfiles/Default.pubxml.user">
-      <publishTime>02/11/2020 23:06:15</publishTime>
+      <publishTime>02/11/2020 23:17:14</publishTime>
     </File>
     <File Include="robots.txt">
       <publishTime>01/06/2015 21:18:35</publishTime>
@@ -306,10 +306,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/06/2015 21:18:37</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>02/11/2020 22:55:09</publishTime>
+      <publishTime>02/11/2020 23:45:43</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
-      <publishTime>02/11/2020 21:40:31</publishTime>
+      <publishTime>02/11/2020 23:45:43</publishTime>
     </File>
     <File Include="Sitemap.aspx">
       <publishTime>02/11/2020 22:55:05</publishTime>
@@ -333,7 +333,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/23/2015 12:15:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/11/2020 23:06:14</publishTime>
+      <publishTime>02/12/2020 00:02:48</publishTime>
     </File>
   </ItemGroup>
 </Project>
