@@ -102,7 +102,7 @@ namespace Web
         }
 
         #endregion
-        
+
         #region Botão Limpar
 
         protected void btnLimpar_Click(object sender, EventArgs e)
@@ -111,6 +111,7 @@ namespace Web
             txtEmail.Text = string.Empty;
             ddlAssunto.SelectedIndex = 0;
             txtMensagem.Text = string.Empty;
+            lblRecaptcha.Text = string.Empty;
         }
 
         #endregion
